@@ -1,0 +1,415 @@
+html {
+    /**Reset para rems**/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/** General **/
+
+@font-face {
+    font-family: segoi-ui;
+    src: url('../segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+}
+
+body {
+    font-family: segoi-ui;
+}
+
+.contenedor {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    /**Le doy un tamaño maximo de 100% del contenedor a la imagen**/
+    max-width: 100%;
+}
+
+
+/**Utilidades**/
+
+.seccion {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fw-400 {
+    /**Para hacer textos mas delgados**/
+    font-weight: 400;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/** Header **/
+
+.contenido-header {
+    height: 100%;
+    /**posiciona elementos de acuerdo a propiedades de flexbox**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.barra-menu {
+    margin: 1rem 0;
+    align-content: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+
+/**Navegador**/
+
+.navegacion {
+    margin: 2rem 0 2rem;
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 3.5rem;
+}
+
+.navegacion a:hover {
+    color: gray;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+nav {
+    float: left;
+    /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #053477;
+    text-decoration: none;
+}
+
+
+/** Titulo **/
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.container h1 {
+    font-size: 5.8rem;
+    color: #053477;
+    margin: 45% 0% 50% 60%;
+}
+
+.container img {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.fondo-opaco {
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(100, 100, 100, 0.4);
+    position: absolute;
+    z-index: 2;
+}
+/**Main**/
+
+.container-2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.container-2 .child-1 h2{
+    font-size: 5rem;
+    color: #2A4B7A;
+    padding: 7rem 0 0 0;
+}
+
+.container-2 .child-2 img {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    margin: 7rem;
+}
+
+.container-2 .child-3 {
+    text-align: center;
+    width: 41rem;
+}
+
+.container-2 .child-3 p{
+    font-size: 1.8rem;
+    color:#053477;
+}
+
+.container-2 .child-3 h3 {
+    font-size: 2.5rem;
+    color: #f75f1c;
+}
+
+.child-3_contenido {
+    margin: 5.8rem 0 0 0;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-3 h2 {
+    font-size: 5rem;
+    color: #2A4B7A;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.container-3 child-1 {
+    flex-direction: row;
+}
+
+.avatar {
+    text-align: center;
+    margin: 5rem;
+}
+
+.avatar img {
+    display:inline-flex;
+    flex-direction: row;
+    width: 30rem;
+    height: 30rem;
+    margin: 0 5rem;
+}
+
+.info {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 5rem 0;
+}
+.avatar-info {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.avatar-info h3{
+    font-size: 2.5rem;
+    color: #f75f1c;
+}
+
+.avatar-info p {
+    font-size: 1.8rem;
+    color:#053477;
+}
+/**Contacto**/
+
+.container-4 {
+    display: flex;
+    flex-direction: row;
+    background-color: #2A4B7A;
+    height: 65rem;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    
+}
+
+.contacto h2 {
+    color: #F75F1C;
+    font-size: 4.5rem;
+    margin: 10rem 0 0 30rem;
+}
+
+.contacto p {
+    color: white;
+    margin: 1rem 0 0 32rem; 
+    font-size: 1.3rem;
+}
+
+.formulario {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h3 {
+    color: #F75F1C;
+    font-size: 2.5rem;
+    margin: 5rem 0 0 0 ;
+}
+
+.formulario legend {
+    color: white;
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
+}
+
+.formulario input {
+    width: 70rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.formulario select {
+    width: 70rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#mensaje-area {
+    height: 20rem;
+    width: 70rem;
+    font-size: 1.3rem;
+}
+
+/**Botones**/
+
+.formulario .btn {
+    width: 12rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: #e35619;
+    padding: 1rem 3rem;
+    margin: 2rem 0 0 0;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+#ciudades option:first-of-type {
+    color: #dfdfdf;
+}
+  
+#ciudades:focus option:first-of-type {
+    display: none;
+}
+
+/**Footer**/
+
+.col {
+    margin: 3.5rem 8rem;
+
+}
+
+.col span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.col p {
+
+    font-size: 1.4rem;
+}
+
+.col a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    font-size: 1.4rem;
+}
+
+.col a:hover {
+    color: #F75F1C;
+}
+
+.col span:after {
+    display: block;
+    content: '';
+    width: 25rem;
+    height: .2rem;
+    background-color:#F75F1C;
+    margin: 0 0 1.5rem 0;
+}
+
+#footer-info {
+    align-items: center;
+    padding: 0;
+}
+
+.row img {
+    height: 3rem;
+}
+
+.row ul {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e35619;
+}
+
+.row li {
+    
+    list-style-type: none;
+    margin: 1rem 8rem;
+}
+
+.row {
+    width: 100%;
+}
